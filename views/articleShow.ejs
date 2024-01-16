@@ -8,13 +8,18 @@
 
 <body>
     <div id="articleContent">
-        <div id="articleTitle">
-            <%= data[0].titleArticle %>
-        </div>
-        <p id="articleText">
-            <%= data[0].textArticle %>
-        </p>
+        <% if (data && data.length > 0) { %>
+            <div id="articleTitle">
+                <%= data[0].titleArticle %>
+            </div>
+            <p id="articleText">
+                <%= data[0].textArticle %>
+            </p>
+        <% } else { %>
+            <p>Статья не найдена</p>
+        <% } %>
         <p><a href="http://localhost:3000/article/">Вернуться к списку статей</a></p>
+    </div>
 </body>
 
 </html>
