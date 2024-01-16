@@ -2,7 +2,7 @@ const express = require('express');
 const newsController = require('../controllers/newsController.js');
 
 const router = express.Router();
-var bodyParser = require('body-parser'); 
+var bodyParser = require('body-parser');
 const jsonParser = express.json();
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
